@@ -10,7 +10,7 @@ const wiki = require("./routes/wiki.js");
 const catalogRouter = require("./routes/catalog"); 
 const app = express();
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'development') {
   require('dotenv').config();
 }
 
