@@ -40,6 +40,7 @@ app.use('/users', usersRouter);
 app.use("/wiki", wiki);
 app.use("/catalog", catalogRouter); // Add catalog routes to middleware chain.
 
+console.log('app.js alive')
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
