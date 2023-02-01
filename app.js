@@ -19,7 +19,7 @@ console.log(process.env.NODE_ENV)
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
 
-const mongoDB = `mongodb+srv://admin:${process.env.MONGO_PASSWORD}cluster0.vnin66j.mongodb.net/?retryWrites=true&w=majority`;
+const mongoDB = `mongodb+srv://admin:${process.env.MONGO_PASSWORD}@cluster0.vnin66j.mongodb.net/?retryWrites=true&w=majority`;
 main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
