@@ -20,7 +20,7 @@ const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
 
 const dev_db_url =
-  `mongodb+srv://admin:${process.env.MONGO_PASSWORD}@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority`;
+  `mongodb+srv://admin:${process.env.MONGO_PASSWORD}@cluster0.vnin66j.mongodb.net/?retryWrites=true&w=majority`;
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch(err => console.log(err));
